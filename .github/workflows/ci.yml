@@ -6,9 +6,9 @@ jobs:
     steps:
       - name: Hello Step
         run: |
-        echo "Welcome to GitHub Actions"
-        echo "I am Suresh Kumar"
-        echo "Working as a DevOps Engineer and Cloud Engineer in MNC Company"
+            echo "Welcome to GitHub Actions"
+            echo "I am Suresh Kumar"
+            echo "Working as a DevOps Engineer and Cloud Engineer in MNC Company"
     
    
   

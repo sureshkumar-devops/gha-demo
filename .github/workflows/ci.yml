@@ -1,14 +1,21 @@
 name: Hello World
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Step
-        run: |
-            echo "Welcome to GitHub Actions"
-            echo "I am Suresh Kumar"
-            echo "Working as a DevOps Engineer and Cloud Engineer in MNC Company"
+      - name: Build Phase
+        run: echo "A demo build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
+        run: echo "Running test cases"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Phase
+        run: echo "Deploping Phase"
     
    
   

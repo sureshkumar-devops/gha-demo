@@ -5,7 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Step
-        run: echo "Welcome to GitHub Actions"
-        
+        run: |
+        echo "Welcome to GitHub Actions"
+        echo "I am Suresh Kumar"
+        echo "Working as a DevOps Engineer and Cloud Engineer in MNC Company"
+    
    
   

@@ -14,7 +14,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-south-1
 
-    - name: Code Static Copy to S3 bucket
+    - name: Code Static Copy to S3 bucket.
       run: |
          aws s3 sync ./ s3://w3-gha-website-demo/ \
          --exclude "*" \

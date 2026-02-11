@@ -3,13 +3,10 @@ on:
   push:
    branches:
      - master
-     - feature/if-demo
-     
   pull_request: 
    types: 
      - opened
      - synchronize
-
 jobs:
   build:
    runs-on: ubuntu-latest

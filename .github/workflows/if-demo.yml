@@ -1,9 +1,9 @@
 name: If Demo
-on:
- push:
-   branches:
-     - master
-     - dev
+on: workflow_dispatch
+
+      branches:
+       - master
+       - dev
 jobs:
   demo:
     runs-on: ubuntu-latest

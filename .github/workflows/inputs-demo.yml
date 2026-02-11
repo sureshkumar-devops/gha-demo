@@ -6,11 +6,12 @@ on:
        description: Choose the Environment to Deploy the app
        required: true
        default: dev
+       type: choice
        options:
          - dev
          - stage
          - prod
-     artifacts_tag:
+      artifacts_tag:
        description: Choose the git tags to deploy
        required: true       
 jobs:

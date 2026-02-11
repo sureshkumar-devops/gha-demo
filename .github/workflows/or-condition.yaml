@@ -5,9 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run for Lehar Aashish or sureshkumar-devops
-        if: github.actor == 'sureshkumar-devops' || github.actor == 'Lehar Aashish'
+        if: github.actor == 'sureshkumar-devops' || github.actor == 'Lehar-Aashish'
         run: echo "It is triggered by either sureshkumar-devops Or Lehar Aashish"
-      - name: Run if condition fails
-        run: echo "if condition fails"
+    
         
         

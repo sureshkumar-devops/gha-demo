@@ -1,5 +1,10 @@
 name: Build & Deploy
 on: 
+  push:
+   branches:
+     - master
+     - feature/if-demo
+     
   pull_request: 
    types: 
      - opened
@@ -8,6 +13,15 @@ on:
 jobs:
   build:
    runs-on: ubuntu-latest
+   if: github.event_name == 'pull_request'
    steps:
      - name: Build Phase
        run: echo "Building the Application"
+  deploy:
+   runs-on: ubuntu-latest
+   if: github.event_name == 'push' && github.ref_name == 'master'
+   steps:
+     - name: Deploy Phase
+       run: echo "Deploying the Application"
+       
+  

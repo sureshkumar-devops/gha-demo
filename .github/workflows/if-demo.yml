@@ -12,5 +12,5 @@ jobs:
         if: github.ref == 'refs/heads/main' 
         run: echo "Running for main branch"
       - name: Run this Step
-        run: echo "Running this step"
+        run: echo "Running this step."
         

@@ -6,5 +6,8 @@ jobs:
    steps:
      - name: Use Context Variables
        run: |
-         echo "This workflow is triggered by ${{ github.actor }}
-         echo "The  Repository Name is :- ${{ github.repository }}
+         echo "This workflow is triggered by ${{ github.actor }}"
+         echo "The  Repository Name is :- ${{ github.repository }}"
+         
+     - name: Print all Variables under github
+       run: "${{ toJson(github) }}"

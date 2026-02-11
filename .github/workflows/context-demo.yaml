@@ -1,5 +1,5 @@
 name: Context Variables Demo
-on: push
+on: workflow_dispatch
 jobs:
   context-demo:
    runs-on: ubuntu-latest

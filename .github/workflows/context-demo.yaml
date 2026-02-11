@@ -1,0 +1,10 @@
+name: Context Variables Demo
+on: push
+jobs:
+  context-demo:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Use Context Variables
+       run: |
+         echo "This workflow is triggered by ${{ github.actor }}
+         echo "The  Repository Name is :- ${{ github.repository }}

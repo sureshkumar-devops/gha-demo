@@ -1,5 +1,5 @@
 name: Deploy html to AWS S3 bucket
-on: push
+on: workflow_dispatch
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -10,8 +10,8 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID1 }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY1 }}
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-south-1
 
     - name: Code Static Copy to S3 bucket.

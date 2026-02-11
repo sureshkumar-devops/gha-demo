@@ -7,8 +7,10 @@ jobs:
    env: 
      APP_ENV: "test"
    runs-on: ubuntu-latest
-   steps:
+   steps:    
      - name: Connecting to environment
+       env:
+         APP_ENV: "prod"
        run: echo "Application is connection to $APP_ENV"
   
   

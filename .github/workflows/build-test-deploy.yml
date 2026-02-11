@@ -1,0 +1,13 @@
+name: Build & Deploy
+on: 
+  pull_request: 
+   types: 
+     - opened
+     - synchronize
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Build Phase 123
+       run: echo "Building the Application123"

@@ -1,6 +1,6 @@
 name: If Demo
-on: workflow_dispatch
-
+on: 
+   push:
       branches:
        - master
        - dev
